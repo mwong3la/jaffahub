@@ -3,9 +3,9 @@ import { Code, Users, Rocket } from "lucide-react";
 export const Services = () => {
   return (
     <section id="services" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-32">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="grid grid-cols-2 mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Our <span className="text-teal-600">heritage</span> is tied to yours
           </h2>

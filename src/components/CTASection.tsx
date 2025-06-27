@@ -1,10 +1,10 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const CTA = () => {
+export const CTASection = () => {
   return (
     <section className="py-20 bg-gradient-to-br from-teal-600 to-teal-700 text-white">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-32">
         <div className="text-center space-y-8">
           <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
             All the tech expertise, none of the hassle

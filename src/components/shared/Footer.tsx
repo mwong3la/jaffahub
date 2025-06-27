@@ -16,8 +16,8 @@ export const Footer = () => {
   ];
 
   return (
-    <footer id="contact" className="bg-gray-900 text-white py-16">
-      <div className="container mx-auto px-4">
+    <footer id="contact" className="text-white py-16">
+      <div className="container mx-auto px-32">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Logo & Brand */}
           <div className="space-y-4">
