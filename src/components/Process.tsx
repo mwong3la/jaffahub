@@ -27,14 +27,14 @@ export const Process = () => {
           <div className="relative">
             <div className="relative z-10">
               <img 
-                src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=800&q=80"
+                src="/images/process.png"
                 alt="Professional working on laptop"
                 className="w-full rounded-3xl shadow-2xl"
               />
             </div>
             
             {/* Decorative Elements */}
-            <div className="absolute -top-6 -left-6 w-24 h-24 bg-teal-400 rounded-2xl opacity-20"></div>
+            <div className="absolute -top-6 -left-6 w-24 h-24 bg-[#73E171] rounded-2xl opacity-20"></div>
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl opacity-20"></div>
           </div>
 
@@ -43,7 +43,7 @@ export const Process = () => {
             {steps.map((step, index) => (
               <div key={index} className="flex space-x-6">
                 <div className="flex-shrink-0">
-                  <div className="w-12 h-12 bg-teal-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                  <div className="w-12 h-12 bg-[#73E171] text-white rounded-full flex items-center justify-center font-bold text-lg">
                     {step.number}
                   </div>
                 </div>

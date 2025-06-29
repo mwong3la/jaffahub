@@ -1,10 +1,10 @@
-import { CheckCircle } from "lucide-react";
+import { CheckCheck, CheckCircle, CheckCircle2, CheckCircle2Icon } from "lucide-react";
 
 export const TechStack = () => {
   const services = [
     {
       icon: "📱",
-      title: "SaaS App Development", 
+      title: "SaaS App Development",
       description: "Scalable SaaS apps designed to handle growth effortlessly and Deliver seamless user experiences.",
       features: [
         "Build cloud, server-agnostic architectures",
@@ -23,12 +23,12 @@ export const TechStack = () => {
       ]
     },
     {
-      icon: "🌐", 
+      icon: "🌐",
       title: "Web App Development",
       description: "High-performance web apps, responsive design solutions, and cutting-edge cloud architecture that delivers standard standards.",
       features: [
         "Responsive design solutions",
-        "Scalable, high-level architectures", 
+        "Scalable, high-level architectures",
         "Secure development environments"
       ]
     },
@@ -44,7 +44,7 @@ export const TechStack = () => {
     },
     {
       icon: "🚀",
-      title: "MVP Development", 
+      title: "MVP Development",
       description: "Quick MVP development to launch your market validation early. Optimized, validated tools, and iterative based technology for rapid success.",
       features: [
         "Rapid prototyping for validation",
@@ -58,7 +58,7 @@ export const TechStack = () => {
       description: "Transform existing for today's functionality, performance, and scalability needs without disrupting business operations.",
       features: [
         "Migrate to modern stacks",
-        "Minimal data loss and disruption", 
+        "Minimal data loss and disruption",
         "Enhanced security compliance"
       ]
     }
@@ -77,21 +77,26 @@ export const TechStack = () => {
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-2xl p-8 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <div key={index} className="bg-[#52AAA6] text-white rounded-2xl p-8 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <div className="space-y-6">
                 {/* Header */}
-                <div className="space-y-4">
-                  <div className="text-4xl">{service.icon}</div>
-                  <h3 className="text-xl font-bold text-gray-900">{service.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{service.description}</p>
+                <div className="border-b py-8">
+                  <div className="flex items-center gap-4 ">
+                    <div className="bg-[#E9F0FB] rounded p-2 w-fit">
+                      <img src="/images/icon.png" alt="Lightning Icon" className="h-6 w-6" />
+                    </div>
+                    <h3 className="text-xl font-bold">{service.title}</h3>
+
+                  </div>
+                  <p className="leading-relaxed mt-8">{service.description}</p>
                 </div>
 
                 {/* Features */}
                 <div className="space-y-3">
                   {service.features.map((feature, featureIndex) => (
                     <div key={featureIndex} className="flex items-start space-x-3">
-                      <CheckCircle className="h-5 w-5 text-teal-600 mt-0.5 flex-shrink-0" />
-                      <span className="text-sm text-gray-700">{feature}</span>
+                      <CheckCircle2 className="h-5 w-5 text-teal-600 mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">{feature}</span>
                     </div>
                   ))}
                 </div>
