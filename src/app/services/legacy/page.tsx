@@ -16,56 +16,58 @@ const page = () => {
         headerText: "What are the benefits of using us",
         accordionBenefits: [
             {
-                title: "Proven Expertise",
+                title: "Modern Tech Stack",
                 description:
-                    "Our team has years of experience delivering scalable SaaS solutions that are optimized for both growth and performance, ensuring high-value results for your business.",
+                    "We upgrade legacy systems with modern technologies, ensuring improved performance, scalability, and security while maintaining the integrity of your existing operations.",
             },
             {
-                title: "End-to-End Support",
+                title: "Minimal Disruption",
                 description:
-                    "From initial concept to cloud deployment, we manage the entire process, ensuring seamless integration, timely delivery, and ongoing support tailored to your business needs.",
+                    "Our modernization approach is designed to cause minimal disruption to your business operations, allowing you to continue using your existing systems while transitioning smoothly.",
             },
             {
-                title: "Scalability & Security",
+                title: "Enhanced Security",
                 description:
-                    "Our solutions prioritize scalability with high availability, while adhering to industry-leading security standards, protecting your data and ensuring a cost-effective, future-proof setup.",
+                    "We fortify legacy applications with the latest security protocols, reducing vulnerabilities and protecting your system from modern cybersecurity threats.",
             },
         ],
     }
+
     const processSteps = [
         {
             id: 1,
             title: "Product Discovery",
             description:
-                "We collaborate closely to understand your vision and the goals of your SaaS product. Our team researches market trends, competitors, and your target audience. We also create a roadmap for scalable architecture, define essential features, and develop wireframes.",
-            peopleInvolved: ["Business Analyst", "Product Manager", "Software Architect", "Senior Developer"],
-            deliverables: ["Product roadmap", "Wireframes", "Technical Specs"],
+                "We assess your current systems, identify pain points, and outline the best strategy to modernize your legacy application.",
+            peopleInvolved: ["Business Analyst", "Software Architect", "Product Manager"],
+            deliverables: ["Modernization roadmap", "Technical architecture", "System audit"],
         },
         {
             id: 2,
             title: "Development Planning",
             description:
-                "We create detailed technical specifications and development timelines. Our team establishes the technology stack, defines coding standards, and sets up development environments for optimal productivity.",
-            peopleInvolved: ["Technical Lead", "Senior Developers", "DevOps Engineer", "QA Lead"],
-            deliverables: ["Technical architecture", "Development timeline", "Resource allocation plan"],
+                "We choose the tech stack and finalize the modernization strategy, preparing the development team and setting milestones.",
+            peopleInvolved: ["Product Manager", "Software Architect", "Development Team"],
+            deliverables: ["Development timeline", "Success metrics", "Team composition"],
         },
         {
             id: 3,
-            title: "SaaS Design and Development",
+            title: "Legacy Modernization and Development",
             description:
-                "Our experienced team builds your SaaS product using modern technologies and best practices. We focus on scalability, security, and user experience while maintaining clean, maintainable code.",
-            peopleInvolved: ["Full-stack Developers", "UI/UX Designers", "QA Engineers", "Security Specialist"],
-            deliverables: ["MVP application", "User interface design", "Quality assurance reports"],
+                "Our team updates your system with new technologies, improving performance, security, and scalability.",
+            peopleInvolved: ["Front-end Developers", "Back-end Developers", "UI/UX Designer", "Quality Assurance"],
+            deliverables: ["Modernized application", "Source code", "Deployment documentation"],
         },
         {
             id: 4,
             title: "Post-launch Support",
             description:
-                "We provide ongoing maintenance, monitoring, and feature enhancements to ensure your SaaS product continues to meet user needs and business objectives as it grows.",
-            peopleInvolved: ["Support Engineers", "DevOps Team", "Product Manager", "Customer Success"],
-            deliverables: ["Monitoring dashboard", "Performance reports", "Feature updates"],
+                "We provide ongoing support to ensure the modernized system runs smoothly, with updates as needed.",
+            peopleInvolved: ["Technical Support", "Development Team"],
+            deliverables: ["Maintenance reports", "Performance monitoring", "Updates"],
         },
     ]
+
     return (
         <div className="min-h-screen">
             <HeroSection
@@ -103,9 +105,12 @@ const page = () => {
             <Benefits
                 headerText={benefitsData.headerText}
                 accordionBenefits={benefitsData.accordionBenefits}
+                imageSrc="/images/legacy.png"
                 className='bg-[#F1F4F8]'
             />
-            <InteractiveProcessSection steps={processSteps} />
+            <InteractiveProcessSection
+                steps={processSteps}
+            />
             <ProcessSection
                 className='bg-[#F1F4F8]'
             />

@@ -16,19 +16,19 @@ const page = () => {
         headerText: "What are the benefits of using us",
         accordionBenefits: [
             {
-                title: "Proven Expertise",
+                title: "Tailored to Your Needs",
                 description:
-                    "Our team has years of experience delivering scalable SaaS solutions that are optimized for both growth and performance, ensuring high-value results for your business.",
+                    "We develop mobile apps that ensure seamless performance across both iOS and Android platforms, maximizing user reach and delivering a unified brand experience.",
             },
             {
-                title: "End-to-End Support",
+                title: "Seamless Integration",
                 description:
-                    "From initial concept to cloud deployment, we manage the entire process, ensuring seamless integration, timely delivery, and ongoing support tailored to your business needs.",
+                    "Our solutions ensure smooth interoperability with existing tools and platforms, helping you leverage your current infrastructure while introducing new efficiencies.",
             },
             {
-                title: "Scalability & Security",
+                title: "Agile Development Process",
                 description:
-                    "Our solutions prioritize scalability with high availability, while adhering to industry-leading security standards, protecting your data and ensuring a cost-effective, future-proof setup.",
+                    "We use an agile methodology to rapidly iterate, adapting your software to real-world demands and user feedback while maintaining high standards of quality and reliability.",
             },
         ],
     }
@@ -37,33 +37,33 @@ const page = () => {
             id: 1,
             title: "Product Discovery",
             description:
-                "We collaborate closely to understand your vision and the goals of your SaaS product. Our team researches market trends, competitors, and your target audience. We also create a roadmap for scalable architecture, define essential features, and develop wireframes.",
-            peopleInvolved: ["Business Analyst", "Product Manager", "Software Architect", "Senior Developer"],
-            deliverables: ["Product roadmap", "Wireframes", "Technical Specs"],
+                "We collaborate to understand your unique business needs, mapping out software architecture and core features.",
+            peopleInvolved: ["Business Analyst", "Product Manager", "Software Architect"],
+            deliverables: ["Product roadmap", "Wireframes", "Technical requirements"],
         },
         {
             id: 2,
             title: "Development Planning",
             description:
-                "We create detailed technical specifications and development timelines. Our team establishes the technology stack, defines coding standards, and sets up development environments for optimal productivity.",
-            peopleInvolved: ["Technical Lead", "Senior Developers", "DevOps Engineer", "QA Lead"],
-            deliverables: ["Technical architecture", "Development timeline", "Resource allocation plan"],
+                "We define the tech stack, draft a timeline, and assign a team based on your software requirements.",
+            peopleInvolved: ["Product Manager", "Software Architect", "Development Team"],
+            deliverables: ["Development timeline", "Tech stack", "Success metrics"],
         },
         {
             id: 3,
-            title: "SaaS Design and Development",
+            title: "Custom Software Design and Development",
             description:
-                "Our experienced team builds your SaaS product using modern technologies and best practices. We focus on scalability, security, and user experience while maintaining clean, maintainable code.",
-            peopleInvolved: ["Full-stack Developers", "UI/UX Designers", "QA Engineers", "Security Specialist"],
-            deliverables: ["MVP application", "User interface design", "Quality assurance reports"],
+                "We create the custom software with a focus on integrating key business functionalities and third-party systems.",
+            peopleInvolved: ["Front-end Developers", "Back-end Developers", "Quality Assurance", "UI/UX Designer"],
+            deliverables: ["Fully functional software", "Source code", "Technical documentation"],
         },
         {
             id: 4,
             title: "Post-launch Support",
             description:
-                "We provide ongoing maintenance, monitoring, and feature enhancements to ensure your SaaS product continues to meet user needs and business objectives as it grows.",
-            peopleInvolved: ["Support Engineers", "DevOps Team", "Product Manager", "Customer Success"],
-            deliverables: ["Monitoring dashboard", "Performance reports", "Feature updates"],
+                "We offer regular updates, performance monitoring, and bug fixing to ensure long-term usability.",
+            peopleInvolved: ["Technical support", "Development Team"],
+            deliverables: ["Maintenance reports", "Continuous updates", "Security patches"],
         },
     ]
     return (
@@ -99,6 +99,7 @@ const page = () => {
             <Benefits
                 headerText={benefitsData.headerText}
                 accordionBenefits={benefitsData.accordionBenefits}
+                imageSrc='/images/custom.png'
                 className='bg-[#F8F1F1]'
             />
             <InteractiveProcessSection steps={processSteps} />

@@ -16,56 +16,58 @@ const page = () => {
         headerText: "What are the benefits of using us",
         accordionBenefits: [
             {
-                title: "Proven Expertise",
+                title: "Fast-to-Market",
                 description:
-                    "Our team has years of experience delivering scalable SaaS solutions that are optimized for both growth and performance, ensuring high-value results for your business.",
+                    "We rapidly develop MVPs to validate your idea, enabling early market entry and quick iterations based on real user feedback, saving time and resources.",
             },
             {
-                title: "End-to-End Support",
+                title: "Core Functionality Focus",
                 description:
-                    "From initial concept to cloud deployment, we manage the entire process, ensuring seamless integration, timely delivery, and ongoing support tailored to your business needs.",
+                    "Our MVPs prioritize essential features, allowing you to test key aspects of your product while minimizing development costs and focusing on high-impact areas.",
             },
             {
-                title: "Scalability & Security",
+                title: "Agile Adjustments",
                 description:
-                    "Our solutions prioritize scalability with high availability, while adhering to industry-leading security standards, protecting your data and ensuring a cost-effective, future-proof setup.",
+                    "Our process allows for flexible and fast adjustments, ensuring your MVP evolves quickly in response to market needs or changing business objectives.",
             },
         ],
     }
+
     const processSteps = [
         {
             id: 1,
             title: "Product Discovery",
             description:
-                "We collaborate closely to understand your vision and the goals of your SaaS product. Our team researches market trends, competitors, and your target audience. We also create a roadmap for scalable architecture, define essential features, and develop wireframes.",
-            peopleInvolved: ["Business Analyst", "Product Manager", "Software Architect", "Senior Developer"],
-            deliverables: ["Product roadmap", "Wireframes", "Technical Specs"],
+                "We analyze your product concept, define the MVP's core features, and prepare wireframes and prototypes.",
+            peopleInvolved: ["Business Analyst", "UI/UX Designer", "Product Manager"],
+            deliverables: ["Wireframes", "Prototypes", "MVP roadmap"],
         },
         {
             id: 2,
             title: "Development Planning",
             description:
-                "We create detailed technical specifications and development timelines. Our team establishes the technology stack, defines coding standards, and sets up development environments for optimal productivity.",
-            peopleInvolved: ["Technical Lead", "Senior Developers", "DevOps Engineer", "QA Lead"],
-            deliverables: ["Technical architecture", "Development timeline", "Resource allocation plan"],
+                "We outline the tech stack, set timelines, and assign the development team for the MVP.",
+            peopleInvolved: ["Product Manager", "Software Architect", "Development Team"],
+            deliverables: ["Development timeline", "Success metrics", "Team structure"],
         },
         {
             id: 3,
-            title: "SaaS Design and Development",
+            title: "MVP Design and Development",
             description:
-                "Our experienced team builds your SaaS product using modern technologies and best practices. We focus on scalability, security, and user experience while maintaining clean, maintainable code.",
-            peopleInvolved: ["Full-stack Developers", "UI/UX Designers", "QA Engineers", "Security Specialist"],
-            deliverables: ["MVP application", "User interface design", "Quality assurance reports"],
+                "We rapidly develop the MVP with prioritized core features and ensure thorough testing.",
+            peopleInvolved: ["Front-end Developers", "Back-end Developers", "UI/UX Designer", "Quality Assurance"],
+            deliverables: ["MVP version of the product", "Source code", "Deployment documentation"],
         },
         {
             id: 4,
             title: "Post-launch Support",
             description:
-                "We provide ongoing maintenance, monitoring, and feature enhancements to ensure your SaaS product continues to meet user needs and business objectives as it grows.",
-            peopleInvolved: ["Support Engineers", "DevOps Team", "Product Manager", "Customer Success"],
-            deliverables: ["Monitoring dashboard", "Performance reports", "Feature updates"],
+                "We collect feedback, iterate on features, and ensure the MVP evolves into a fully-featured product.",
+            peopleInvolved: ["Product Manager", "Development Team", "Technical Support"],
+            deliverables: ["User feedback reports", "Iterative updates", "Performance monitoring"],
         },
     ]
+
     return (
         <div className="min-h-screen">
             <HeroSection
@@ -100,9 +102,12 @@ const page = () => {
             <Benefits
                 headerText={benefitsData.headerText}
                 accordionBenefits={benefitsData.accordionBenefits}
+                imageSrc='/images/mvp.png'
                 className='bg-[#F7F1F8]'
             />
-            <InteractiveProcessSection steps={processSteps} />
+            <InteractiveProcessSection
+                steps={processSteps}
+            />
             <ProcessSection
                 className='bg-[#F7F1F8]'
             />
