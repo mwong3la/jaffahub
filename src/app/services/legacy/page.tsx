@@ -69,13 +69,37 @@ const page = () => {
     return (
         <div className="min-h-screen">
             <HeroSection
-                title="Mobile-First Experiences"
-                highlight="That Engage and Retain"
+                title="Future-Proof your "
+                highlight="Legacy Systems"
                 buttonText="Discuss My Project Needs"
                 onButtonClick={() => router.push("/portfolio")}
             />
 
-            <FeaturesSection />
+            <FeaturesSection
+                title='Outdated applications can hold your business back. We specialize in modernizing legacy systems, transitioning them to the latest technologies, improving performance, security, and user experience, while ensuring smooth operations during migration.'
+                features={[
+                    {
+                        title: "Languages",
+                        description: "Java, .NET, C++"
+                    },
+                    {
+                        title: "Frameworks",
+                        description: "Spring, ASP.NET Core"
+                    },
+                    {
+                        title: "Databases",
+                        description: "SQL Server, Oracle, MySQL"
+                    },
+                    {
+                        title: "Cloud",
+                        description: "AWS, Azure, Google Cloud"
+                    },
+                    {
+                        title: "Microservices",
+                        description: "Docker, Kubernetes"
+                    }
+                ]}
+            />
             <Benefits
                 headerText={benefitsData.headerText}
                 accordionBenefits={benefitsData.accordionBenefits}

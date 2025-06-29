@@ -11,7 +11,7 @@ const AboutPage = () => {
 
     return (
         <div className="min-h-screen">
-             <HeroSection
+            <HeroSection
                 title="Driven by Innovation "
                 highlight="and Impact"
                 buttonText="Get in touch"
@@ -25,7 +25,7 @@ const AboutPage = () => {
                         <div className="grid lg:grid-cols-2 gap-12 items-center">
                             <div>
                                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                                    Building <span className="text-teal-500">possibility</span>
+                                    Building <span className="text-[#52AAA6]">possibility</span>
                                     <br />
                                     from day one
                                 </h1>
@@ -49,10 +49,10 @@ const AboutPage = () => {
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {/* Excellence */}
                             <div className="space-y-4">
-                                <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center">
-                                    <Target className="w-6 h-6 text-teal-600" />
+                                <div className="w-12 h-12 rounded-lg flex items-center justify-center">
+                                    <Target className="w-6 h-6" />
                                 </div>
-                                <h3 className="text-xl font-semibold text-teal-600">Excellence</h3>
+                                <h3 className="text-xl font-semibold text-[#52AAA6]">Excellence</h3>
                                 <p className="text-gray-600 leading-relaxed">
                                     We continually strive to exceed expectations. By constantly learning and pushing boundaries, we deliver
                                     tech solutions that stand out and make a lasting impact.
@@ -61,10 +61,10 @@ const AboutPage = () => {
 
                             {/* Transparency */}
                             <div className="space-y-4">
-                                <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center">
-                                    <Eye className="w-6 h-6 text-teal-600" />
+                                <div className="w-12 h-12 rounded-lg flex items-center justify-center">
+                                    <Eye className="w-6 h-6" />
                                 </div>
-                                <h3 className="text-xl font-semibold text-teal-600">Transparency</h3>
+                                <h3 className="text-xl font-semibold text-[#52AAA6]">Transparency</h3>
                                 <p className="text-gray-600 leading-relaxed">
                                     We believe in open, honest communication. Transparency builds trust and helps everyone understand the
                                     reasoning behind our decisions, leading to stronger, more authentic relationships.
@@ -73,10 +73,10 @@ const AboutPage = () => {
 
                             {/* Humanity */}
                             <div className="space-y-4">
-                                <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center">
-                                    <Heart className="w-6 h-6 text-teal-600" />
+                                <div className="w-12 h-12 rounded-lg flex items-center justify-center">
+                                    <Heart className="w-6 h-6" />
                                 </div>
-                                <h3 className="text-xl font-semibold text-teal-600">Humanity</h3>
+                                <h3 className="text-xl font-semibold text-[#52AAA6]">Humanity</h3>
                                 <p className="text-gray-600 leading-relaxed">
                                     We prioritize the human experience. Our technology solutions are designed to be intuitive and
                                     user-friendly, ensuring people remain at the heart of every project we undertake.
@@ -85,10 +85,10 @@ const AboutPage = () => {
 
                             {/* Integrity */}
                             <div className="space-y-4">
-                                <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center">
-                                    <CheckCircle className="w-6 h-6 text-teal-600" />
+                                <div className="w-12 h-12 rounded-lg flex items-center justify-center">
+                                    <CheckCircle className="w-6 h-6" />
                                 </div>
-                                <h3 className="text-xl font-semibold text-teal-600">Integrity</h3>
+                                <h3 className="text-xl font-semibold text-[#52AAA6]">Integrity</h3>
                                 <p className="text-gray-600 leading-relaxed">
                                     Integrity is essential to everything we do. By being ethical and consistent, we build trust and ensure
                                     that our work is always aligned with our clients' best interests.
@@ -97,10 +97,10 @@ const AboutPage = () => {
 
                             {/* Collaboration */}
                             <div className="space-y-4 md:col-span-2 lg:col-span-1">
-                                <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center">
-                                    <Handshake className="w-6 h-6 text-teal-600" />
+                                <div className="w-12 h-12 rounded-lg flex items-center justify-center">
+                                    <Handshake className="w-6 h-6" />
                                 </div>
-                                <h3 className="text-xl font-semibold text-teal-600">Collaboration</h3>
+                                <h3 className="text-xl font-semibold text-[#52AAA6]">Collaboration</h3>
                                 <p className="text-gray-600 leading-relaxed">
                                     Collaboration drives innovation. By working closely with our clients and diverse perspectives together,
                                     we create better solutions, making us a true partner in your success.

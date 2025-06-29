@@ -75,7 +75,31 @@ const page = () => {
                 onButtonClick={() => router.push("/portfolio")}
             />
 
-            <FeaturesSection />
+            <FeaturesSection
+                title="Mobile apps are at the core of user interaction. We develop mobile apps that deliver high performance and exceptional user experience, ensuring your brand engages customers on iOS, Android, and cross-platform frameworks like React Native and Flutter."
+                features={[
+                    {
+                        title: "iOS",
+                        description: "Swift, Objective-C"
+                    },
+                    {
+                        title: "Android",
+                        description: "Kotlin, Java"
+                    },
+                    {
+                        title: "Cross-Platform",
+                        description: "React Native, Flutter"
+                    },
+                    {
+                        title: "Backend",
+                        description: "AWS, Firebase, Node.js, Python"
+                    },
+                    {
+                        title: "APIs",
+                        description: "GraphQL, RESTful APIs, Firebase"
+                    },
+                ]}
+            />
             <Benefits
                 headerText={benefitsData.headerText}
                 accordionBenefits={benefitsData.accordionBenefits}

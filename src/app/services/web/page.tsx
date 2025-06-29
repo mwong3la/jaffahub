@@ -69,13 +69,38 @@ const page = () => {
     return (
         <div className="min-h-screen">
             <HeroSection
-                title="Mobile-First Experiences"
-                highlight="That Engage and Retain"
+                title="High-Performance "
+                highlight="Web Apps that Excel"
                 buttonText="Discuss My Project Needs"
                 onButtonClick={() => router.push("/portfolio")}
             />
 
-            <FeaturesSection />
+            <FeaturesSection
+                title="Web applications are critical to your business. We build fast, secure, and scalable web apps that deliver an optimal user experience."
+                subtitle='From small-scale apps to enterprise solutions, we ensure that your web app exceeds expectations in terms of performance and usability.'
+                features={[
+                    {
+                        title: "Frontend",
+                        description: "React, Angular, Vue.js"
+                    },
+                    {
+                        title: "Backend",
+                        description: "Node.js, Python, PHP, .NET"
+                    },
+                    {
+                        title: "Databases",
+                        description: "MySQL, MongoDB, PostgreSQL"
+                    },
+                    {
+                        title: "DevOps",
+                        description: "Docker, Jenkins, Kubernetes"
+                    },
+                    {
+                        title: "Frameworks",
+                        description: "Django, Express, Laravel"
+                    },
+                ]}
+            />
             <Benefits
                 headerText={benefitsData.headerText}
                 accordionBenefits={benefitsData.accordionBenefits}

@@ -69,13 +69,33 @@ const page = () => {
     return (
         <div className="min-h-screen">
             <HeroSection
-                title="Mobile-First Experiences"
-                highlight="That Engage and Retain"
+                title="Tailored Software to "
+                highlight="Meet Your Exact Needs"
                 buttonText="Discuss My Project Needs"
                 onButtonClick={() => router.push("/portfolio")}
             />
-
-            <FeaturesSection />
+            <FeaturesSection
+                title="Off-the-shelf software often doesn’t meet the specific needs of businesses. We create custom solutions tailored to your operations, ensuring scalability, integration, and long-term success. "
+                subtitle='Whether automating processes or developing entirely new platforms, we ensure our solutions work seamlessly for your business.'
+                features={[
+                    {
+                        title: "Languages",
+                        description: "Python, Java, C#, JavaScript"
+                    },
+                    {
+                        title: "Frameworks",
+                        description: "Spring, ASP.NET ,Django"
+                    },
+                    {
+                        title: "Cloud",
+                        description: "AWS, Azure, Google Cloud"
+                    },
+                    {
+                        title: "Databases",
+                        description: "SQL Server, Oracle, MySQL"
+                    },
+                ]}
+            />
             <Benefits
                 headerText={benefitsData.headerText}
                 accordionBenefits={benefitsData.accordionBenefits}

@@ -76,7 +76,28 @@ const page = () => {
         onButtonClick={() => router.push("/portfolio")}
       />
 
-      <FeaturesSection />
+      <FeaturesSection
+        title="Your customers demand reliability and flexibility. We create SaaS platforms that offer scalable, secure, and high-performance solutions tailored to meet your business needs. "
+        subtitle='With cloud-native architectures, your app scales effortlessly, adapting to growth while maintaining peak performance.'
+        features={[
+          {
+            title: "Cloud Platforms",
+            description: "AWS, Google Cloud, Microsoft Azure"
+          },
+          {
+            title: "Backends",
+            description: "Laravel, Django, Ruby on Rails, .NET"
+          },
+          {
+            title: "Databases",
+            description: "MySQL, PostgreSQL, MongoDB, Amazon Aurora"
+          },
+          {
+            title: "DevOps",
+            description: "Docker, Kubernetes, Jenkins, GitHub"
+          }
+        ]}
+      />
       <Benefits
         headerText={benefitsData.headerText}
         accordionBenefits={benefitsData.accordionBenefits}
