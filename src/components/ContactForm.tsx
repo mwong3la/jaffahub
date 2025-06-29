@@ -17,7 +17,7 @@ const ContactForm = () => {
           />
         </div>
       </div>
-      
+
       <div className="grid md:grid-cols-2 gap-4">
         <div>
           <input
@@ -34,7 +34,7 @@ const ContactForm = () => {
           />
         </div>
       </div>
-      
+
       <div>
         <textarea
           placeholder="How can we help you?"
@@ -42,13 +42,13 @@ const ContactForm = () => {
           className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none resize-none"
         ></textarea>
       </div>
-      
+
       <div className="text-sm text-gray-500">
         By selecting this, you agree to the{" "}
         <a href="#" className="text-teal-600 hover:underline">Privacy Policy</a> and{" "}
         <a href="#" className="text-teal-600 hover:underline">Cookie Policy</a>
       </div>
-      
+
       <button
         type="submit"
         className="w-fit bg-teal-600 hover:bg-teal-700 text-white py-3 px-6 rounded-lg font-medium transition-colors"

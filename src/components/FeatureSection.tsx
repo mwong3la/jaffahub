@@ -1,7 +1,6 @@
 import { Shield, Users, Zap, Target } from "lucide-react";
 
 interface Feature {
-    icon: React.ComponentType<any>;
     title: string;
     description: string;
 }
@@ -14,22 +13,18 @@ interface FeaturesSectionProps {
 
 const defaultFeatures: Feature[] = [
     {
-        icon: Target,
         title: "Cloud Platforms",
         description: "AWS, Google Cloud, Microsoft Azure"
     },
     {
-        icon: Shield,
         title: "Backends",
         description: "Laravel, Django, Ruby on Rails, .NET"
     },
     {
-        icon: Users,
         title: "Databases",
         description: "MySQL, PostgreSQL, MongoDB, Amazon Aurora"
     },
     {
-        icon: Zap,
         title: "DevOps",
         description: "Docker, Kubernetes, Jenkins, GitHub"
     }
@@ -53,15 +48,12 @@ const FeaturesSection = ({
                         </p>
                     </div>
 
-                    <div>
+                    <div className="border p-6 rounded-xl">
                         <h3 className="text-2xl font-bold text-teal-600 mb-8">{title}</h3>
 
                         <div className="space-y-6">
                             {features.map((feature, index) => (
-                                <div key={index} className="flex items-start gap-4">
-                                    <div className="flex-shrink-0 mt-1">
-                                        <feature.icon className="w-5 h-5 text-teal-600" />
-                                    </div>
+                                <div key={index} className="flex items-start gap-4 border-b last:border-b-0">
                                     <div>
                                         <h4 className="font-semibold text-gray-900 mb-1">
                                             {feature.title}:
@@ -73,6 +65,7 @@ const FeaturesSection = ({
                                 </div>
                             ))}
                         </div>
+
                     </div>
                 </div>
             </div>

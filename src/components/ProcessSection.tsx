@@ -9,6 +9,7 @@ interface ProcessStep {
 interface ProcessSectionProps {
     title?: string;
     steps?: ProcessStep[];
+    className?: string
 }
 
 const defaultSteps: ProcessStep[] = [
@@ -31,11 +32,12 @@ const defaultSteps: ProcessStep[] = [
 
 const ProcessSection = ({
     title = "How does it work?",
-    steps = defaultSteps
+    steps = defaultSteps,
+    className = 'bg-white'
 }: ProcessSectionProps) => {
     return (
-        <section className="py-20 px-6 bg-white">
-            <div className="max-w-6xl mx-auto">
+        <section className={`py-20 px-32 ${className}`}>
+            <div className="">
                 <div className="grid lg:grid-cols-2 gap-16 items-start">
                     <div>
                         <h2 className="text-4xl font-bold text-gray-900 mb-8">

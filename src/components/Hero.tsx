@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 export const Hero = () => {
     return (
         <section id="home" className="pt-20 pb-16 bg-gradient-to-br from-gray-50 to-white overflow-hidden">
-            <div className="container mx-auto px-32">
+            <div className="px-32">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     {/* Left Content */}
                     <div className="space-y-8 animate-fade-in">

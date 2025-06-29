@@ -26,7 +26,7 @@ export const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
-      <div className="container px-32 py-4">
+      <div className="px-32 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
@@ -44,9 +44,9 @@ export const Header = () => {
             >
               Home
             </a>
-            
+
             {/* Services Dropdown */}
-            <div 
+            <div
               className="relative"
               onMouseEnter={() => setIsServicesOpen(true)}
               onMouseLeave={() => setIsServicesOpen(false)}
@@ -55,29 +55,31 @@ export const Header = () => {
                 Services
                 <ChevronDown className="ml-1 h-4 w-4" />
               </button>
-              
+
               {isServicesOpen && (
-                <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
-                  <div className="flex gap-8 p-6">
-                    <div className="flex flex-col justify-between mb-4">
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                        We are the tech partner that gets it
-                      </h3>
-                      <Button className="bg-teal-600 hover:bg-teal-700 text-white text-sm px-4 py-2 rounded-md">
-                        Contact us
-                      </Button>
-                    </div>
-                    <div className="space-y-1 ">
-                      {servicePages.map((service) => (
-                        <Link
-                          key={service.label}
-                          href={service.href}
-                          className="flex items-center justify-between border-b px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-colors duration-200 group"
-                        >
-                          <span className="whitespace-nowrap">{service.label}</span>
-                          <span className="text-gray-400 group-hover:text-gray-600 transition-colors duration-200">→</span>
-                        </Link>
-                      ))}
+                <div className="absolute top-full left-0 pt-2 z-50">
+                  <div className="bg-white border border-gray-200 rounded-lg shadow-lg">
+                    <div className="flex gap-8 p-6">
+                      <div className="flex flex-col justify-between mb-4">
+                        <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                          We are the tech partner that gets it
+                        </h3>
+                        <Button className="bg-teal-600 hover:bg-teal-700 text-white text-sm px-4 py-2 rounded-md">
+                          Contact us
+                        </Button>
+                      </div>
+                      <div className="space-y-1 ">
+                        {servicePages.map((service) => (
+                          <Link
+                            key={service.label}
+                            href={service.href}
+                            className="flex items-center justify-between border-b px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-colors duration-200 group"
+                          >
+                            <span className="whitespace-nowrap">{service.label}</span>
+                            <span className="text-gray-400 group-hover:text-gray-600 transition-colors duration-200">→</span>
+                          </Link>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -115,7 +117,7 @@ export const Header = () => {
               >
                 Home
               </a>
-              
+
               {/* Mobile Services Menu */}
               <div className="space-y-2">
                 <div className="text-gray-700 font-medium">Services</div>
