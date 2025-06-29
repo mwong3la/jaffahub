@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 export const HomeHero = () => {
     return (
-        <section id="home" className="pt-10 h-screen  bg-[#171717] overflow-hidden">
+        <section id="home" className="pt-10 sm:h-screen  bg-[#171717] overflow-hidden">
             <div className="p-4 sm:pl-32 sm:pr-18 h-full">
                 <div className="grid lg:grid-cols-2 gap-12 h-full">
                     {/* Left Content */}
