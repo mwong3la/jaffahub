@@ -17,7 +17,7 @@ export const Footer = () => {
 
   return (
     <footer id="contact" className="text-white py-16">
-      <div className="px-32">
+      <div className="p-4 md:px-12 lg:px-32">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Logo & Brand */}
           <div className="space-y-4">

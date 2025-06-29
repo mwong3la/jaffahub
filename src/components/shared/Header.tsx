@@ -11,8 +11,8 @@ export const Header = () => {
 
   const navItems = [
     { label: "Home", href: "/" },
-    { label: "About us", href: "#about" },
-    { label: "Contact", href: "#contact" },
+    { label: "About us", href: "/about" },
+    { label: "Contact", href: "/contact" },
   ];
 
   const servicePages = [
@@ -26,7 +26,7 @@ export const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
-      <div className="px-32 py-4">
+      <div className="px-4 md:px-12 lg:px-32 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">

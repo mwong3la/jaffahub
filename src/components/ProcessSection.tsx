@@ -36,7 +36,7 @@ const ProcessSection = ({
     className = 'bg-white'
 }: ProcessSectionProps) => {
     return (
-        <section className={`py-20 px-32 ${className}`}>
+        <section className={`py-20 p-4 md:px-12 lg:px-32 ${className}`}>
             <div className="">
                 <div className="grid lg:grid-cols-2 gap-16 items-start">
                     <div>

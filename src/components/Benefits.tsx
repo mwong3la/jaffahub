@@ -31,7 +31,7 @@ export default function Benefits({
     }
 
     return (
-        <div className={`py-10 px-32 ${className}`}>
+        <div className={`py-10 p-4 md:px-12 lg:px-32 ${className}`}>
             {/* Top Section - Image and Main Benefit */}
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
                 {/* Image Section */}

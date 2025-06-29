@@ -1,5 +1,5 @@
 import { CTASection } from "@/components/CTASection";
-import { Hero } from "@/components/Hero";
+import { HomeHero } from "@/components/HomeHero";
 import { Process } from "@/components/Process";
 import { Services } from "@/components/Services";
 import { TechStack } from "@/components/TechStack";
@@ -7,7 +7,7 @@ import { TechStack } from "@/components/TechStack";
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
-      <Hero />
+      <HomeHero />
       <Services />
       <Process />
       <TechStack />

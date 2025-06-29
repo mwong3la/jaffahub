@@ -21,7 +21,7 @@ export const Process = () => {
 
   return (
     <section className="py-20 bg-gray-50">
-      <div className="px-32">
+      <div className="p-4 md:px-12 lg:px-32">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content - Image */}
           <div className="relative">

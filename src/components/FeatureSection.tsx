@@ -36,7 +36,7 @@ const FeaturesSection = ({
     features = defaultFeatures
 }: FeaturesSectionProps) => {
     return (
-        <section className="py-20 px-32 bg-white">
+        <section className="py-20 p-4 md:px-12 lg:px-32 bg-white">
             <div className="mx-auto">
                 <div className="grid lg:grid-cols-2 gap-16 items-start">
                     <div>
