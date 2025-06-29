@@ -33,6 +33,7 @@ const page = () => {
       },
     ],
   }
+
   const processSteps = [
     {
       id: 1,
@@ -67,6 +68,7 @@ const page = () => {
       deliverables: ["Monitoring dashboard", "Performance reports", "Feature updates"],
     },
   ]
+
   return (
     <div className="min-h-screen">
       <HeroSection
@@ -103,7 +105,9 @@ const page = () => {
         accordionBenefits={benefitsData.accordionBenefits}
         className='bg-[#F1F8F7]'
       />
-      <InteractiveProcessSection steps={processSteps} />
+      <InteractiveProcessSection
+        steps={processSteps}
+      />
       <ProcessSection />
       <CTASection />
     </div>

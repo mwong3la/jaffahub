@@ -32,40 +32,42 @@ const page = () => {
             },
         ],
     }
+
     const processSteps = [
         {
             id: 1,
             title: "Product Discovery",
             description:
-                "We collaborate closely to understand your vision and the goals of your SaaS product. Our team researches market trends, competitors, and your target audience. We also create a roadmap for scalable architecture, define essential features, and develop wireframes.",
-            peopleInvolved: ["Business Analyst", "Product Manager", "Software Architect", "Senior Developer"],
-            deliverables: ["Product roadmap", "Wireframes", "Technical Specs"],
+                "We define user journeys, analyze competition, and create wireframes and technical specifications.",
+            peopleInvolved: ["Business Analyst", "Product Manager", "UI/UX Designer"],
+            deliverables: ["Wireframes", "Technical requirements", "Product roadmap"],
         },
         {
             id: 2,
             title: "Development Planning",
             description:
-                "We create detailed technical specifications and development timelines. Our team establishes the technology stack, defines coding standards, and sets up development environments for optimal productivity.",
-            peopleInvolved: ["Technical Lead", "Senior Developers", "DevOps Engineer", "QA Lead"],
-            deliverables: ["Technical architecture", "Development timeline", "Resource allocation plan"],
+                "We finalize the tech stack and architecture, preparing the development team and setting key milestones.",
+            peopleInvolved: ["Product Manager", "Software Architect", "Web Developers"],
+            deliverables: ["Development timeline", "Tech stack", "Team structure"],
         },
         {
             id: 3,
-            title: "SaaS Design and Development",
+            title: "Web App Design and Development",
             description:
-                "Our experienced team builds your SaaS product using modern technologies and best practices. We focus on scalability, security, and user experience while maintaining clean, maintainable code.",
-            peopleInvolved: ["Full-stack Developers", "UI/UX Designers", "QA Engineers", "Security Specialist"],
-            deliverables: ["MVP application", "User interface design", "Quality assurance reports"],
+                "Our team builds the web app with a focus on scalability, performance, and security.",
+            peopleInvolved: ["Front-end Developers", "Back-end Developers", "Quality Assurance", "UI/UX Designer"],
+            deliverables: ["Fully functional web app", "Source code", "Deployment documentation"],
         },
         {
             id: 4,
             title: "Post-launch Support",
             description:
-                "We provide ongoing maintenance, monitoring, and feature enhancements to ensure your SaaS product continues to meet user needs and business objectives as it grows.",
-            peopleInvolved: ["Support Engineers", "DevOps Team", "Product Manager", "Customer Success"],
-            deliverables: ["Monitoring dashboard", "Performance reports", "Feature updates"],
+                "We offer ongoing monitoring, performance optimization, and feature scaling.",
+            peopleInvolved: ["Technical Support", "Web Developers"],
+            deliverables: ["Performance monitoring", "Feature updates", "Security improvements"],
         },
     ]
+
     return (
         <div className="min-h-screen">
             <HeroSection
@@ -107,7 +109,9 @@ const page = () => {
                 imageSrc='/images/web.png'
                 className='bg-[#F8F5F1]'
             />
-            <InteractiveProcessSection steps={processSteps} />
+            <InteractiveProcessSection
+                steps={processSteps}
+            />
             <ProcessSection
                 className='bg-[#F8F5F1]'
             />

@@ -47,8 +47,6 @@ export default function Benefits({
                     </div>
                 </div>
 
-
-
                 {/* Accordion Section */}
                 <div className="w-full lg:w-1/2 space-y-6">
                     <h2 className="bg-white rounded-lg py-1 px-2 text-teal-500 font-medium">{headerText}</h2>
