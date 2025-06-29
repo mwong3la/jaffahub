@@ -1,9 +1,14 @@
-import { ArrowRight } from "lucide-react";
+"use client"
+
+import { ArrowRight, Link } from "lucide-react";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export const Footer = () => {
+  const router = useRouter()
   const services = [
     "SAAS App Development",
-    "Mobile App Development", 
+    "Mobile App Development",
     "Web App Development",
     "Custom Software",
     "MVP Development",
@@ -21,11 +26,19 @@ export const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Logo & Brand */}
           <div className="space-y-4">
+            {/* Logo */}
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-teal-400 to-teal-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">JH</span>
-              </div>
-              <span className="text-xl font-bold">JeffaHub</span>
+              {/* <Link href="/" className="flex items-center space-x-2"> */}
+                <Image
+                  src="/images/logo.png"
+                  alt="Jaffahub Logo"
+                  width={130}
+                  height={64}
+                  className="cursor-pointer"
+                  onClick={()=>router.push("/")}
+                  priority
+                />
+              {/* </Link> */}
             </div>
             <p className="text-gray-400 text-sm">© 2024 JeffaHub</p>
           </div>
