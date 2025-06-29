@@ -16,19 +16,19 @@ const page = () => {
         headerText: "What are the benefits of using us",
         accordionBenefits: [
             {
-                title: "Proven Expertise",
+                title: "Fast-to-Market",
                 description:
-                    "Our team has years of experience delivering scalable SaaS solutions that are optimized for both growth and performance, ensuring high-value results for your business.",
+                    "We rapidly develop MVPs to validate your idea, enabling early market entry and quick iterations based on real user feedback, saving time and resources.",
             },
             {
-                title: "End-to-End Support",
+                title: "Core Functionality Focus",
                 description:
-                    "From initial concept to cloud deployment, we manage the entire process, ensuring seamless integration, timely delivery, and ongoing support tailored to your business needs.",
+                    "Our MVPs prioritize essential features, allowing you to test key aspects of your product while minimizing development costs and focusing on high-impact areas.",
             },
             {
-                title: "Scalability & Security",
+                title: "Agile Adjustments",
                 description:
-                    "Our solutions prioritize scalability with high availability, while adhering to industry-leading security standards, protecting your data and ensuring a cost-effective, future-proof setup.",
+                    "Our process allows for flexible and fast adjustments, ensuring your MVP evolves quickly in response to market needs or changing business objectives.",
             },
         ],
     }
@@ -100,6 +100,7 @@ const page = () => {
             <Benefits
                 headerText={benefitsData.headerText}
                 accordionBenefits={benefitsData.accordionBenefits}
+                imageSrc='/images/mvp.png'
                 className='bg-[#F7F1F8]'
             />
             <InteractiveProcessSection steps={processSteps} />

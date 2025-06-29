@@ -16,19 +16,19 @@ const page = () => {
         headerText: "What are the benefits of using us",
         accordionBenefits: [
             {
-                title: "Proven Expertise",
+                title: "Tailored to Your Needs",
                 description:
-                    "Our team has years of experience delivering scalable SaaS solutions that are optimized for both growth and performance, ensuring high-value results for your business.",
+                    "We develop mobile apps that ensure seamless performance across both iOS and Android platforms, maximizing user reach and delivering a unified brand experience.",
             },
             {
-                title: "End-to-End Support",
+                title: "Seamless Integration",
                 description:
-                    "From initial concept to cloud deployment, we manage the entire process, ensuring seamless integration, timely delivery, and ongoing support tailored to your business needs.",
+                    "Our solutions ensure smooth interoperability with existing tools and platforms, helping you leverage your current infrastructure while introducing new efficiencies.",
             },
             {
-                title: "Scalability & Security",
+                title: "Agile Development Process",
                 description:
-                    "Our solutions prioritize scalability with high availability, while adhering to industry-leading security standards, protecting your data and ensuring a cost-effective, future-proof setup.",
+                    "We use an agile methodology to rapidly iterate, adapting your software to real-world demands and user feedback while maintaining high standards of quality and reliability.",
             },
         ],
     }
@@ -99,6 +99,7 @@ const page = () => {
             <Benefits
                 headerText={benefitsData.headerText}
                 accordionBenefits={benefitsData.accordionBenefits}
+                imageSrc='/images/custom.png'
                 className='bg-[#F8F1F1]'
             />
             <InteractiveProcessSection steps={processSteps} />

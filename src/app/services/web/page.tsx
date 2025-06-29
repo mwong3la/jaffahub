@@ -16,19 +16,19 @@ const page = () => {
         headerText: "What are the benefits of using us",
         accordionBenefits: [
             {
-                title: "Proven Expertise",
+                title: "High-Performance Solutions",
                 description:
-                    "Our team has years of experience delivering scalable SaaS solutions that are optimized for both growth and performance, ensuring high-value results for your business.",
+                    "We craft web apps designed to handle heavy traffic and scale efficiently, delivering fast, responsive experiences that keep your users engaged.",
             },
             {
-                title: "End-to-End Support",
+                title: "Full Stack Expertise",
                 description:
-                    "From initial concept to cloud deployment, we manage the entire process, ensuring seamless integration, timely delivery, and ongoing support tailored to your business needs.",
+                    "Our team excels in frontend and backend development, ensuring smooth integration between your web services, databases, and client-side interfaces for optimal user interaction.",
             },
             {
-                title: "Scalability & Security",
+                title: "Continuous Optimization",
                 description:
-                    "Our solutions prioritize scalability with high availability, while adhering to industry-leading security standards, protecting your data and ensuring a cost-effective, future-proof setup.",
+                    "We provide ongoing updates and optimization services, keeping your web app secure, up-to-date, and aligned with evolving business goals.",
             },
         ],
     }
@@ -104,6 +104,7 @@ const page = () => {
             <Benefits
                 headerText={benefitsData.headerText}
                 accordionBenefits={benefitsData.accordionBenefits}
+                imageSrc='/images/web.png'
                 className='bg-[#F8F5F1]'
             />
             <InteractiveProcessSection steps={processSteps} />
